@@ -15,7 +15,7 @@ params = {
     "term": "food"
 }
 
-# Response takes in a header and params variable
+# Response takes in a url, header and params variable
 response = requests.get(url, headers = headers, params = params)
 #print(response.json())
 
