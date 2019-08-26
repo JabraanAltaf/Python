@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[161]:
-
-
 from bs4 import BeautifulSoup
 import requests
 
@@ -26,10 +20,3 @@ for movie in movies:
      print(movie.select_one('.lister-item-index').getText() + movie.find('a').getText())
      print("Rating: " + ratings[index].getText())
      index += 1
-
-
-# In[ ]:
-
-
-
-
